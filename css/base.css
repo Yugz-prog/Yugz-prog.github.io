@@ -1,0 +1,99 @@
+div{
+    position: absolute;
+}
+#echo{
+    background-image: url("../img/walk/tileup_0.png");
+    background-size: 100% 100%;
+    z-index: 11;
+}
+.tree{
+    background-size: 100% 100%;
+    z-index: 9;
+}
+.grass{
+    background-image: url("../img/ground/pokemon_hgss_tileset_grass/tile009.png");
+    background-size: 100% 100%;
+    z-index: 8;
+}
+.highGrass{
+    background-size: 100% 100%;
+    z-index: 10;
+}
+body{
+	padding: 0px;
+	overflow: auto;
+	user-select: none;
+}
+
+.grass, .tree, #echo, .highGrass{
+    height: 64px;
+	width: 64px;
+}
+
+.menuCombat{
+    height: 800px;
+    width: 800px;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: wheat;
+    flex-direction: column;
+    z-index: 18;
+    left: 25%;
+}
+
+.buttons, .pokemons{
+    display: flex;
+    flex-direction: column;
+}
+
+.buttons, .pokemons, .attackMenu{
+    position:relative;
+    height: 50%;
+    width: 90%;
+    margin: 5%;
+    background-color: white;
+}
+
+.attack, .quit{
+    height: 50%;
+    width:100%;
+    font-size: x-large;
+}
+
+.attackMenu{
+    display: none;
+    flex-wrap: wrap;
+}
+
+.attackButton{
+    width: 50%;
+}
+
+.backButton{
+    width: 100%;
+}
+
+.myPoke{
+    position: absolute;
+    height: 220px;
+    width: 220px;
+    top: 25%;
+    left: 30%;
+}
+
+.wildPokemon{
+    position: absolute;
+    height: 150px;
+    width: 150px;
+    left: 70%;
+}
+
+.pokemons{
+    background-image: url("../img/fondNBPokemon.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+h1{
+    text-align: center;
+}
